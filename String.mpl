@@ -14,6 +14,7 @@
 "control.pfunc" use
 "control.print" use
 "control.printf" use
+"control.times" use
 "control.when" use
 "control.while" use
 "control.||" use
@@ -261,6 +262,16 @@ makeStringView2: [{
     size other.size = [size Natx cast other.data data memcmp 0 =] &&
   ];
 
+  hash: [
+    result: 33n32;
+    size [
+      codeunit: data i Natx cast + Nat8 addressToReference Nat32 cast;
+      result 47n32 * codeunit + !result
+    ] times
+
+    result
+  ];
+
   iter: [data size makeStringIter2];
 
   view: [
@@ -336,6 +347,8 @@ String: [{
     other: makeStringView;
     self other.equal
   ];
+
+  hash: [getStringView.hash];
 
   iter: [getStringMemory getTextSize makeStringIter2];
 
@@ -653,16 +666,4 @@ printList: [
   assembleString print
 ];
 
-hash: [makeStringView TRUE] [
-  string: makeStringView;
-  result: 33n32;
-
-  i: 0;
-  [i string.size = ~] [
-    byte: string.data i Natx cast + Nat8 addressToReference Nat32 cast;
-    result 47n32 * byte + !result
-    i 1 + !i
-  ] while
-
-  result
-] pfunc;
+hash: ["" same] [makeStringView.hash] pfunc;
