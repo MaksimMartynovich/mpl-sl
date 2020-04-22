@@ -150,7 +150,7 @@ makeArrayObject: [{
   ];
 
   size: [
-    dataSize
+    dataSize copy
   ];
 
   view: [
