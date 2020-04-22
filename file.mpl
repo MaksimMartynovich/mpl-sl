@@ -98,12 +98,12 @@ saveString: [
   stringView: makeStringView;
   name: toString;
 
-  size: stringView textSize;
+  size: stringView.size;
 
   f: "wb\00" name.getStringMemory Text addressToReference fopen;
   f 0nx = ~
   [
-    size 0nx = [f size 1nx stringView stringMemory fwrite size =] ||
+    size 0 = [f size Natx cast 1nx stringView stringMemory fwrite size Natx cast =] ||
     f fflush 0 = and
     f fclose 0 = and
   ] &&
@@ -113,12 +113,12 @@ appendString: [
   stringView: makeStringView;
   name: toString;
 
-  size: stringView textSize;
+  size: stringView.size;
 
   f: "ab\00" name.getStringMemory Text addressToReference fopen;
   f 0nx = ~
   [
-    size 0nx = [f size 1nx stringView stringMemory fwrite size =] ||
+    size 0 = [f size Natx cast 1nx stringView stringMemory fwrite size Natx cast =] ||
     f fflush 0 = and
     f fclose 0 = and
   ] &&

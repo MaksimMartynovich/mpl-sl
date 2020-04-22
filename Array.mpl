@@ -1,4 +1,11 @@
-"memory" includeModule
+"control.&&" use
+"control.Natx" use
+"control.assert" use
+"control.pfunc" use
+"control.when" use
+"control.while" use
+"memory.mplFree" use
+"memory.mplRealloc" use
 
 makeArrayRangeRaw: [{
   virtual RANGE: ();
@@ -341,9 +348,6 @@ makeArray: [
 
   @result
 ];
-
-fieldCount: ["ARRAY" has] [0.getSize] pfunc;
-fieldCount: ["ARRAY_RANGE" has] [0.getSize] pfunc;
 
 getHeapUsedSize: ["ARRAY" has] [
   arg:;
