@@ -329,19 +329,15 @@ String: [{
   virtual STRING: ();
   chars: Nat8 Array;
 
-  getTextSize: [
+  data: [chars.getBufferBegin];
+
+  size: [
     chars.getSize 0 = [
       0
     ] [
       chars.getSize 1 -
     ] if
   ];
-
-  getStringMemory: [chars.getBufferBegin];
-
-  data: [getStringMemory];
-
-  size: [getTextSize];
 
   equal: [
     other: makeStringView;
@@ -350,11 +346,11 @@ String: [{
 
   hash: [getStringView.hash];
 
-  iter: [getStringMemory getTextSize makeStringIter2];
+  iter: [data size makeStringIter2];
 
   view: [
     index: size:;;
-    getStringMemory index Natx cast + size makeStringView2
+    data index Natx cast + size makeStringView2
   ];
 
   getStringView: [
@@ -622,10 +618,6 @@ makeStringViewByAddress: [
   address address strlen Int32 cast makeStringView2
 ];
 
-stringMemory: ["" same] [storageAddress] pfunc;
-stringMemory: [StringView same] [.data copy] pfunc;
-stringMemory: ["STRING" has] [.getStringMemory] pfunc;
-
 toString: [
   arg:;
   result: String;
@@ -651,7 +643,7 @@ print: ["" same ~] [toString print] pfunc;
 
 print: ["STRING" has] [
   string:;
-  (string.getStringMemory) "%s\00" printf
+  (string.data) "%s\00" printf
 ] pfunc;
 
 addLog: [
