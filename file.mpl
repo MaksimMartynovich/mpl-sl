@@ -1,5 +1,13 @@
-"control" includeModule
-"String" includeModule
+"control" use
+
+"conventions.cdecl" use
+"conventions.stdcall" use
+"Array.Array" use
+"String.assembleString" use
+"String.makeStringView" use
+"String.makeStringViewByAddress" use
+"String.toString" use
+"String.String" use
 
 {stream: Natx;} Int32                                       {convention: cdecl;} "fclose"   importFunction
 {stream: Natx;} Int32                                       {convention: cdecl;} "ferror"   importFunction
