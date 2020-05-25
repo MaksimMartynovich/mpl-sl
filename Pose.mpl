@@ -1,6 +1,9 @@
-"control" includeModule
-"algebra" includeModule
-"Quaternion" includeModule
+"control.Real32" use
+"control.pfunc" use
+"control.when" use
+"algebra.Vector" use
+"Quaternion.Quaternion" use
+"Quaternion.matrix" use
 
 pose: [
   position0: orientation0: ;;

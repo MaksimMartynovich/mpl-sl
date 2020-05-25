@@ -1,5 +1,15 @@
-"control" includeModule
-"objectTools" includeModule
+"control.case" use
+"control.drop" use
+"control.Nat8" use
+"control.Natx" use
+"control.Ref" use
+"control.isCodeRef" use
+"control.isCopyable" use
+"control.when" use
+"control.||" use
+"control.&&" use
+"objectTools.insertField" use
+"objectTools.unwrapField" use
 
 addContextToSignature: [
   signature:;

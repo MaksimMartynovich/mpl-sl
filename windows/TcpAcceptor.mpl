@@ -1,5 +1,32 @@
-"Function" includeModule
-"TcpConnection" includeModule
+"atomic.ACQUIRE" use
+"atomic.RELEASE" use
+"atomic.atomicExchange" use
+"atomic.atomicStore" use
+"atomic.atomicXor" use
+"control.&&" use
+"control.||" use
+"control.=" use
+"control.assert" use
+"control.cond" use
+"control.drop" use
+"control.isNil" use
+"control.print" use
+"control.Nat8" use
+"control.Nat16" use
+"control.Int32" use
+"control.Nat32" use
+"control.Natx" use
+"control.Ref" use
+"control.when" use
+"dispatcher.dispatcher" use
+"Function.Function" use
+"kernel32.kernel32" use
+"String.assembleString" use
+"String.String" use
+"String.print" use
+"String.toString" use
+"TcpConnection.TcpConnection" use
+"ws2_32.winsock2" use
 
 TcpAcceptor: [{
   INIT: [
@@ -140,6 +167,7 @@ TcpAcceptor: [{
   connection: Natx;
   addresses: Nat8 winsock2.sockaddr_in storageSize Nat32 cast Int32 cast 16 + 2 * array;
   dispatcherContext: dispatcher.Context;
+
   onAccept: ({result: String Ref; connection: TcpConnection Ref;} {} {}) Function;
   context: Natx;
 

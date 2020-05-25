@@ -1,5 +1,5 @@
-"control" includeModule
-"Array" includeModule
+"control.pfunc" use
+"Array.Array" use
 
 Deque: [{
   # front: head tail :back

@@ -1,4 +1,6 @@
-"control" useModule
+"control.drop" use
+"control.pfunc" use
+"control.Ref" use
 
 fieldIsRef: [drop drop FALSE];
 fieldIsRef: [index:object:;; index @object @ Ref index @object ! TRUE] [drop drop TRUE] pfunc;

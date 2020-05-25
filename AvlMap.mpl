@@ -1,5 +1,4 @@
-"memory" includeModule
-"control" includeModule
+"control.pfunc" use
 
 AVLMap: [
   value:;

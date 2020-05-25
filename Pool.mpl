@@ -1,6 +1,16 @@
-"control" includeModule
-"memory" includeModule
-"Union" includeModule
+"control.&&" use
+"control.assert" use
+"control.when" use
+"control.Int32" use
+"control.Nat8" use
+"control.Nat32" use
+"control.Natx" use
+"control.times" use
+"control.while" use
+"memory.mplFree" use
+"memory.mplMalloc" use
+"memory.mplRealloc" use
+"Union.Union" use
 
 Pool: [
   element:;

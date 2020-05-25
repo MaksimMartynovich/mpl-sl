@@ -1,9 +1,12 @@
-"Spinlock" useModule
-"atomic" includeModule
-"kernel32" includeModule
-"lockGuard" includeModule
+"control.drop" use
+"control.Int64" use
+"control.Nat64" use
+"control.Real64" use
+"Spinlock.Spinlock" use
+"kernel32.kernel32" use
+"lockGuard.lockGuard" use
 
-runningTime: {
+runningTimeInternal: {
   init: [
     frequency: Int64;
     @frequency kernel32.QueryPerformanceFrequency drop
@@ -26,4 +29,6 @@ runningTime: {
   previousTime: Real64;
 };
 
-@runningTime.init
+@runningTimeInternal.init
+
+runningTime: [@runningTimeInternal];

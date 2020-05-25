@@ -1,8 +1,14 @@
-"String" includeModule
-"kernel32" includeModule
-"ws2_32" useModule
+"control.assert" use
+"control.Nat32" use
+"control.Natx" use
+"control.when" use
+"control.exit" use
+"String.assembleString" use
+"String.print" use
+"kernel32.kernel32" use
+"ws2_32.winsock2" use
 
-dispatcher: {
+dispatcherInternal: {
   OnCallback: [{context: Natx;} {} {} codeRef];
   OnEventRef: [{context: Natx; numberOfBytesTransferred: Nat32; error: Nat32;} {} {} codeRef];
 
@@ -82,4 +88,6 @@ dispatcher: {
   completionPort: Natx;
 };
 
-@dispatcher.init
+@dispatcherInternal.init
+
+dispatcher: [dispatcherInternal];

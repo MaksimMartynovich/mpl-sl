@@ -1,5 +1,6 @@
 "control.&&" use
 "control.Natx" use
+"control.asView" use
 "control.assert" use
 "control.pfunc" use
 "control.when" use

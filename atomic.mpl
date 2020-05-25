@@ -1,4 +1,12 @@
-"control" includeModule
+"control.Cref" use
+"control.drop" use
+"control.Nat8" use
+"control.Nat16" use
+"control.Nat32" use
+"control.Nat64" use
+"control.Ref" use
+"control.pfunc" use
+"conventions.cdecl" use
 
 refCast: [
   ref: schema:;;

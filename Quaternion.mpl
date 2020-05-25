@@ -1,4 +1,4 @@
-"control" useModule
+"control.pfunc" use
 
 Quaternion: [{
   QUATERNION: ();
