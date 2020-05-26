@@ -1,7 +1,13 @@
 "control.Real32" use
 "control.pfunc" use
 "control.when" use
+"algebra.*" use
+"algebra.+" use
+"algebra.-" use
+"algebra.vector?" use
 "algebra.Vector" use
+"Quaternion.*" use
+"Quaternion.identityQuaternion" use
 "Quaternion.Quaternion" use
 "Quaternion.matrix" use
 

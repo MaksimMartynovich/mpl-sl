@@ -3,6 +3,7 @@
 "control.Real32" use
 "control.Real64" use
 "control.pfunc" use
+"control.times" use
 "conventions.cdecl" use
 
 PI: [3.14159265358979323r32];

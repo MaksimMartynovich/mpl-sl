@@ -1,4 +1,6 @@
 "control.pfunc" use
+"algebra.*" use
+"algebra.dot" use
 
 Quaternion: [{
   QUATERNION: ();
