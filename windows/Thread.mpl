@@ -1,5 +1,6 @@
-"String" includeModule
-"kernel32" includeModule
+"control" use
+"String" use
+"kernel32" use
 
 Thread: [{
   INIT: [0nx !handle];

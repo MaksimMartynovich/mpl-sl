@@ -1,5 +1,6 @@
-"control" useModule
-"user32" useModule
+"control" use
+"conventions" use
+"user32" use
 
 {
   hwnd: user32.HWND;

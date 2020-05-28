@@ -1,4 +1,6 @@
-"kernel32" useModule
+"control" use
+"conventions" use
+"kernel32" use
 
 WNDPROC: [{
   hwnd: HWND;

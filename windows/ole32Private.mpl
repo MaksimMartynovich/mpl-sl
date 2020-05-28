@@ -1,4 +1,5 @@
-"control" useModule
+"control" use
+"conventions" use
 
 {
   pvReserved: Natx;

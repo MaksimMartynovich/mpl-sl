@@ -1,4 +1,8 @@
+"control.assert" use
+"control.each" use
 "control.pfunc" use
+"control.times" use
+"control.when" use
 "Array.Array" use
 
 Deque: [{

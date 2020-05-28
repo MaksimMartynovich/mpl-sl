@@ -1,4 +1,5 @@
 "control.assert" use
+"control.isNil" use
 "control.Nat32" use
 "control.Natx" use
 "control.when" use
