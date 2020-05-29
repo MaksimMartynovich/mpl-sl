@@ -1,6 +1,13 @@
-"control" use
-
 "Array.Array" use
+"control.&&" use
+"control.=" use
+"control.assert" use
+"control.dup" use
+"control.findIndexNot" use
+"control.pfunc" use
+"control.unhead" use
+"control.when" use
+"control.while" use
 
 HashTable: [
   value:;

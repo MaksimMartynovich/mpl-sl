@@ -1,13 +1,16 @@
-"control" use
-
-"conventions.cdecl" use
-"conventions.stdcall" use
 "Array.Array" use
+"String.String" use
 "String.assembleString" use
 "String.makeStringView" use
 "String.makeStringViewByAddress" use
 "String.toString" use
-"String.String" use
+"control.&&" use
+"control.Int32" use
+"control.Natx" use
+"control.Ref" use
+"control.Text" use
+"control.||" use
+"conventions.cdecl" use
 
 {stream: Natx;} Int32                                       {convention: cdecl;} "fclose"   importFunction
 {stream: Natx;} Int32                                       {convention: cdecl;} "ferror"   importFunction
