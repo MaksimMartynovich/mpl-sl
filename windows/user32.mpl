@@ -1,4 +1,4 @@
-"control" use
+"control.Natx" use
 "user32Private" use
 
 user32Internal: {

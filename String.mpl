@@ -1,8 +1,23 @@
-"control" use
-
-"conventions.cdecl" use
-
 "Array.Array" use
+"control.&&" use
+"control.Int32" use
+"control.Int64" use
+"control.Nat32" use
+"control.Nat64" use
+"control.Nat8" use
+"control.Natx" use
+"control.Text" use
+"control.asView" use
+"control.assert" use
+"control.drop" use
+"control.dup" use
+"control.pfunc" use
+"control.printf" use
+"control.times" use
+"control.when" use
+"control.while" use
+"control.||" use
+"conventions.cdecl" use
 "memory.memcmp" use
 "memory.memcpy" use
 

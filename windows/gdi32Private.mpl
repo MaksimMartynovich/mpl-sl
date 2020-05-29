@@ -1,8 +1,8 @@
 "control.Cref" use
 "control.Int32" use
-"control.Nat8" use
 "control.Nat16" use
 "control.Nat32" use
+"control.Nat8" use
 "conventions.stdcall" use
 "user32.user32" use
 

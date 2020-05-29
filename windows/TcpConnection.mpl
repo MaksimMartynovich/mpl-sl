@@ -1,30 +1,30 @@
+"Function.Function" use
+"String.String" use
+"String.assembleString" use
+"String.print" use
+"String.toString" use
 "atomic.ACQUIRE" use
 "atomic.RELEASE" use
 "atomic.atomicExchange" use
 "atomic.atomicStore" use
 "atomic.atomicXor" use
 "control.&&" use
-"control.||" use
 "control.=" use
-"control.assert" use
-"control.cond" use
-"control.drop" use
-"control.exit" use
-"control.isNil" use
 "control.Int32" use
 "control.Nat16" use
 "control.Nat32" use
 "control.Natx" use
 "control.Ref" use
+"control.assert" use
+"control.cond" use
+"control.drop" use
+"control.exit" use
+"control.isNil" use
 "control.when" use
+"control.||" use
 "dispatcher.dispatcher" use
 "kernel32.kernel32" use
 "ws2_32.winsock2" use
-"Function.Function" use
-"String.assembleString" use
-"String.String" use
-"String.toString" use
-"String.print" use
 
 writeEventCount: 0 dynamic;
 

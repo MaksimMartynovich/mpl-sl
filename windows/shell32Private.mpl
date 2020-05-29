@@ -1,6 +1,8 @@
-"control" use
-"conventions" use
-"user32" use
+"control.Int32" use
+"control.Nat32" use
+"control.Natx" use
+"conventions.stdcall" use
+"user32.user32" use
 
 {
   hwnd: user32.HWND;

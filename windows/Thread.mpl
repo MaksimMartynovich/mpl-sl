@@ -1,6 +1,6 @@
-"control" use
-"String" use
-"kernel32" use
+"control.Ref" use
+"String.assembleString" use
+"kernel32.kernel32" use
 
 Thread: [{
   INIT: [0nx !handle];

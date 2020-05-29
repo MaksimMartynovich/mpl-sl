@@ -1,11 +1,11 @@
-"control.assert" use
-"control.isNil" use
-"control.Nat32" use
-"control.Natx" use
-"control.when" use
-"control.exit" use
 "String.assembleString" use
 "String.print" use
+"control.Nat32" use
+"control.Natx" use
+"control.assert" use
+"control.exit" use
+"control.isNil" use
+"control.when" use
 "kernel32.kernel32" use
 "ws2_32.winsock2" use
 

@@ -1,6 +1,12 @@
-"control" use
-"conventions" use
-"kernel32" use
+"control.Cref" use
+"control.Int32" use
+"control.Intx" use
+"control.Nat16" use
+"control.Nat32" use
+"control.Natx" use
+"control.Ref" use
+"conventions.stdcall" use
+"kernel32.kernel32" use
 
 WNDPROC: [{
   hwnd: HWND;

@@ -1,8 +1,8 @@
-"control.drop" use
+"Spinlock.Spinlock" use
 "control.Int64" use
 "control.Nat64" use
 "control.Real64" use
-"Spinlock.Spinlock" use
+"control.drop" use
 "kernel32.kernel32" use
 "lockGuard.lockGuard" use
 

@@ -1,5 +1,6 @@
-"control" use
-"conventions" use
+"control.Int32" use
+"control.Natx" use
+"conventions.stdcall" use
 
 {
   pvReserved: Natx;

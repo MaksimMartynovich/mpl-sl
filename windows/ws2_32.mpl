@@ -1,7 +1,7 @@
 "control.Int32" use
-"control.Nat8" use
 "control.Nat16" use
 "control.Nat32" use
+"control.Nat8" use
 "control.Natx" use
 "control.Ref" use
 "conventions.stdcall" use
