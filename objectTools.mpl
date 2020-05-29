@@ -1,6 +1,7 @@
+"control.Ref" use
 "control.drop" use
 "control.pfunc" use
-"control.Ref" use
+"control.unwrapFields" use
 
 fieldIsRef: [drop drop FALSE];
 fieldIsRef: [index:object:;; index @object @ Ref index @object ! TRUE] [drop drop TRUE] pfunc;
