@@ -1,4 +1,5 @@
 "control.assert" use
+"control.drop" use
 "control.each" use
 "control.pfunc" use
 "control.times" use
@@ -12,6 +13,8 @@ Deque: [{
   schema elementType:;
   head: @elementType Array;
   tail: @elementType Array;
+
+  size: [getSize];
 
   getSize: [head.getSize tail.getSize +];
 
@@ -85,12 +88,3 @@ Deque: [{
     @tail.release
   ];
 }];
-
-@: ["DEQUE" has] [.at] pfunc;
-!: ["DEQUE" has] [.at set] pfunc;
-fieldCount: ["DEQUE" has] [.getSize] pfunc;
-each: [drop "DEQUE" has] [
-  deque:body:;;
-  @deque.@head @body each
-  @deque.@tail @body each
-] pfunc;
