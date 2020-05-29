@@ -1,4 +1,6 @@
+"control.&&" use
 "control.pfunc" use
+"control.when" use
 
 AVLMap: [
   value:;
