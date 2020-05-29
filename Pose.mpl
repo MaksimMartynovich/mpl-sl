@@ -1,20 +1,20 @@
-"control.Real32" use
-"control.pfunc" use
-"control.when" use
-"algebra.*" use
-"algebra.+" use
-"algebra.-" use
-"algebra.lerp" use
-"algebra.neg" use
-"algebra.trans" use
-"algebra.vector?" use
-"algebra.Vector" use
 "Quaternion.*" use
 "Quaternion.Quaternion" use
 "Quaternion.conj" use
 "Quaternion.identityQuaternion" use
 "Quaternion.matrix" use
 "Quaternion.nlerp" use
+"algebra.*" use
+"algebra.+" use
+"algebra.-" use
+"algebra.Vector" use
+"algebra.lerp" use
+"algebra.neg" use
+"algebra.trans" use
+"algebra.vector?" use
+"control.Real32" use
+"control.pfunc" use
+"control.when" use
 
 pose: [
   position0: orientation0: ;;

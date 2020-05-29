@@ -1,20 +1,20 @@
+"Array.makeArrayRange" use
+"Array.makeSubRange" use
 "control.!" use
-"control.@" use
 "control.&&" use
-"control.drop" use
+"control.@" use
 "control.Int32" use
-"control.min" use
-"control.Nat8" use
 "control.Nat32" use
 "control.Nat64" use
+"control.Nat8" use
 "control.Natx" use
+"control.drop" use
+"control.min" use
 "control.times" use
 "control.when" use
 "control.while" use
 "memory.memcpy" use
 "memory.memset" use
-"Array.makeArrayRange" use
-"Array.makeSubRange" use
 
 Sha1Internal: {
   rol: [

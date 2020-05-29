@@ -1,14 +1,14 @@
 "control.Cref" use
-"control.drop" use
-"control.Int8" use
 "control.Int16" use
 "control.Int32" use
 "control.Int64" use
-"control.Nat8" use
+"control.Int8" use
 "control.Nat16" use
 "control.Nat32" use
 "control.Nat64" use
+"control.Nat8" use
 "control.Ref" use
+"control.drop" use
 "control.pfunc" use
 "conventions.cdecl" use
 

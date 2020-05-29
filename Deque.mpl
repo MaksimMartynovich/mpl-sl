@@ -1,10 +1,10 @@
+"Array.Array" use
 "control.assert" use
 "control.drop" use
 "control.each" use
 "control.pfunc" use
 "control.times" use
 "control.when" use
-"Array.Array" use
 
 Deque: [{
   # front: head tail :back

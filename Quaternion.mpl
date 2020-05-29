@@ -1,9 +1,9 @@
-"control.pfunc" use
-"control.when" use
 "algebra.*" use
 "algebra.dot" use
 "algebra.lerp" use
 "algebra.neg" use
+"control.pfunc" use
+"control.when" use
 
 Quaternion: [{
   QUATERNION: ();
