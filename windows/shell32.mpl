@@ -1,4 +1,3 @@
-"control" use
 "shell32Private" use
 
 shell32Internal: {
