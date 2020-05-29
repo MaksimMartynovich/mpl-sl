@@ -1,5 +1,5 @@
-"control.Ref" use
 "String.assembleString" use
+"control.Ref" use
 "kernel32.kernel32" use
 
 Thread: [{
